@@ -1,10 +1,15 @@
+import LeftSide from "./LeftSide";
+import RightSide from "./RightSide";
 import TitlePart from "./TitlePart";
 
 const Grid = () => {
   return (
-    <div className="grid grid-rows-12 gap-4 h-full w-full ">
-      <div className="row-span-4 bg-blue-100 border border-blue-300">
-        <TitlePart />
+    <div className="grid grid-cols-15  h-full w-full ">
+      <div className="col-span-6 bg-white">
+        <LeftSide />
+      </div>
+      <div className="col-span-9 bg-white">
+        <RightSide />
       </div>
     </div>
   );

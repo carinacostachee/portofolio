@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'ArcadeClassic';
+    src: 
+    url("../public/fonts/ARCADECLASSIC.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @theme {
+    --font-arcade : 'ArcadeClassic', sans-serif;
+    
+  }
+
+  @layer utilities {
+    @keyframes typing {
+      0% {
+        width: 0%;
+        visibility: hidden;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+      100% {
+        border-color: white;
+      }
+    }
+  
+    .animate-typing {
+      animation: typing 2s steps(10) infinite alternate, blink .6s infinite;
+    }
+  }
