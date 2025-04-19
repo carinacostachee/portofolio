@@ -7,9 +7,16 @@
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Inconsolata';
+    src: url("../public/fonts/Inconsolata-VariableFont_wdth\,wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
   
   @theme {
     --font-arcade : 'ArcadeClassic', sans-serif;
+    --font-inconsolata : 'Inconsolata', sans-serif;
     
   }
 
@@ -34,6 +41,6 @@
     }
   
     .animate-typing {
-      animation: typing 2s steps(10) infinite alternate, blink .6s infinite;
+      animation: typing 2s steps(10) infinite alternate, blink .6s ;
     }
   }
