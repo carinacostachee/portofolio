@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 @font-face {
     font-family: 'ArcadeClassic';
     src: 
@@ -17,6 +19,8 @@
   @theme {
     --font-arcade : 'ArcadeClassic', sans-serif;
     --font-inconsolata : 'Inconsolata', sans-serif;
+    --color-terminal: 
+    rgba(30,30,30,255);
     
   }
 
@@ -30,7 +34,7 @@
         width: 100%;
       }
     }
-  
+    
     @keyframes blink {
       50% {
         border-color: transparent;
@@ -39,8 +43,34 @@
         border-color: white;
       }
     }
-  
+    
+   
+    
     .animate-typing {
-      animation: typing 2s steps(10) infinite alternate, blink .6s ;
+      animation: typing 2s steps(20) forwards;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+    }
+    
+    .animate-blink {
+      animation: blink 0.7s step-end infinite;
+      border-right: 4px solid white;
+    }
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+    
+    .animate-float-delay {
+      animation: float 4s ease-in-out infinite;
+      animation-delay: 2s;
     }
   }
+
+  
