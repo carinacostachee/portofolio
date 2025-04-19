@@ -16,7 +16,7 @@ const TableContents = () => {
       <div className=" col-span-5 flex flex-col justify-center items-start gap-4">
         <Link
           to="/about"
-          className="text-[80px] font-arcade text-rose-300 hover:text-[100px] transition-all duration-300 ease-in-out hover:underline"
+          className="text-[80px] font-arcade text-rose-300 hover:text-[100px] transition-all duration-300 ease-in-out hover:underline drop-shadow-x1/25"
         >
           About Me
         </Link>
