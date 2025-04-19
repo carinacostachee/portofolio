@@ -1,8 +1,6 @@
 const ContactMe = () => {
   return (
-    <div>
-      <h1> This is Contact Page</h1>
-    </div>
+    <div className="bg-gradient-to-br from-rose-100 via-white to-rose-200 h-screen"></div>
   );
 };
 
