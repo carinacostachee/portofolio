@@ -71,6 +71,22 @@
       animation: float 4s ease-in-out infinite;
       animation-delay: 2s;
     }
+    .rotatephoto{
+      
+      transform: rotate(0deg);
+      animation: rotateOnce 1s ease-in-out forwards;
+    }
+
+    @keyframes rotateOnce{
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    } 
+      
+    
     
   }
 

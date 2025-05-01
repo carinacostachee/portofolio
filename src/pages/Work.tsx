@@ -1,7 +1,7 @@
 const Work = () => {
   return (
-    <div>
-      <h1> This is Work Page</h1>
+    <div className="bg-gradient-to-br from-rose-100 via-white to-rose-200 h-screen">
+      here i make a timeline thingy very cool
     </div>
   );
 };
