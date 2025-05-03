@@ -1,3 +1,5 @@
+import Carousel from "./Carousel";
+
 const AboutMe = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-100 via-white to-rose-200 ">
@@ -20,17 +22,17 @@ const AboutMe = () => {
               data structures, and software development. I enjoy learning new
               concepts and applying them in what I do.
             </div>
-            <span className="font-bold text-3xl text-black mt-10">
-              {" "}
-              API stuff and to make the photo of me show when you load the page
-            </span>
+            <div className="font-inconsolata text-rose-800 text-[20px] self-start ml-10">
+              Another important aspect about me is that I love cats. I own one
+              cat, her name is Midzy, she is 1 year old, and another cat, her
+              name is Jiji, she is my friend's cat, but I love her just as much.
+              You can see some photos of them below.
+            </div>
+            <Carousel />
           </div>
         </div>
         <div className="col-span-6 flex justify-center items-center">
-          <img
-            src="/photos/IMG_8600.jpg"
-            className="w-100 mt-20 rotatephoto"
-          ></img>
+          <img src="/photos/IMG_8600.jpg" className="w-100 mt-20"></img>
         </div>
       </div>
     </div>
