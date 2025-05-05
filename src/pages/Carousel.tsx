@@ -19,15 +19,35 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="w-1/4 h-1/4 overflow-hidden">
-      {arrayCats.map((photo, i) => (
-        <img
-          key={i}
-          src={photo.src}
-          alt={photo.alt}
-          className="w-40 h-50 object-cover rounded-xl shadow-md"
-        />
-      ))}
+    <div className=" relative w-96 h-64 mx-auto mt-10 overflow-hidden">
+      {arrayCats.map((photo, i) => {
+        let transform = "";
+        let zIndex = 0;
+
+        let offset = i - currentIndex;
+        if (offset === 0) {
+          transform = "translateX(0) scale(1.1) rotateY(0deg)";
+          zIndex = 10;
+        }
+        if (offset === 1) {
+          transform = "translateX(60%) scale(0.9) rotateY(-25deg)";
+          zIndex = 5;
+        }
+        if (offset === 2) {
+          transform = "translateX(80%) scale(0.9) rotateY(25deg)";
+          zIndex = 3;
+        }
+
+        return (
+          <img
+            key={i}
+            src={photo.src}
+            alt={photo.alt}
+            className="absolute top-1/2 left-1/2 w-40 h-50 object-cover rounded-xl shadow-md transition-all duration-300 -translate-x-1/2 -translate-y-1/2"
+            style={{ transform, zIndex }}
+          />
+        );
+      })}
     </div>
   );
 };
