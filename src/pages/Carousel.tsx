@@ -1,4 +1,16 @@
+import { useState } from "react";
+
 const Carousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const nextPhoto = () => {
+    let newIndex = currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+  const previousPhoto = () => {
+    let lastIndex = currentIndex - 1;
+    setCurrentIndex(lastIndex);
+  };
+
   const arrayCats = [
     { src: "/photos/mitsu1.jpg", alt: "Mitsu sleeping" },
     { src: "/photos/jiji1.jpeg", alt: "Jiji cute" },
@@ -7,7 +19,7 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="flex flex-row gap-5 mt-10">
+    <div className="w-1/4 h-1/4 overflow-hidden">
       {arrayCats.map((photo, i) => (
         <img
           key={i}
