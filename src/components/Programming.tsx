@@ -5,14 +5,32 @@ const Programming = () => {
         Languages I know :
       </div>
       <ol>
-        <li className="font-inconsolata">C++</li>
-        <li className="font-inconsolata">Python</li>
-        <li className="font-inconsolata">Java</li>
-        <li className="font-inconsolata">Haskell</li>
-        <li className="font-inconsolata">Scala</li>
-        <li className="font-inconsolata"> JavaScript</li>
-        <li className="font-inconsolata">TypeScript</li>
-        <li className="font-inconsolata">HTML</li>
+        <li className="font-arcade text-rose-200 font-bold text-[20px] ">
+          C++
+        </li>
+        <li className="font-arcade text-rose-200 font-bold text-[20px]">
+          Python
+        </li>
+        <li className="font-arcade text-rose-200 font-bold text-[20px]">
+          Java
+        </li>
+        <li className="font-arcade text-rose-200 font-bold text-[20px]">
+          Haskell
+        </li>
+        <li className="font-arcade text-rose-200 font-bold text-[20px]">
+          Scala
+        </li>
+        <li className="font-arcade text-rose-200 font-bold text-[20px]">
+          {" "}
+          JavaScript
+        </li>
+        <li className="font-arcade text-rose-200 font-bold text-[20px]">
+          TypeScript
+        </li>
+        <li className="font-arcade text-rose-200 font-bold text-[20px]">
+          HTML
+        </li>
+        <li className="font-arcade text-rose-200 font-bold text-[20px]">CSS</li>
       </ol>
     </div>
   );

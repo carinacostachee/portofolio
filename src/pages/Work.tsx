@@ -12,8 +12,11 @@ const Work = () => {
         <span className="text-[60px] font-arcade tracking-wider text-rose-300 mt-10">
           Work
         </span>
-        <div className="flex bg-pink-400 w-3/4 h-200px border-5 border-rose-300">
-          <div className="w-2/5 h-full border-r-4 border-rose-300">
+        <div
+          className="flex bg-pink-400 
+        items-stretch w-3/4  border-5 border-rose-300"
+        >
+          <div className="w-2/5  border-r-4 border-rose-300 flex flex-col">
             <div className="border-b-4 border-rose-300 cursor-pointer">
               <span
                 className="text-[25px] font-arcade text-rose-300"
@@ -31,10 +34,10 @@ const Work = () => {
               </span>
             </div>
             <div
-              className="border-b-4 border-rose-300 cursor pointer"
+              className="border-b-4 border-rose-300 cursor-pointer"
               onMouseEnter={() => setActiveSection("tools")}
             >
-              <span className="text-[25px] font-arcade text-rose-300">
+              <span className="text-[25px] font-arcade text-rose-300 cursor-pointer">
                 Tools
               </span>
             </div>
