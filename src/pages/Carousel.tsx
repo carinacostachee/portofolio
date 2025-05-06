@@ -1,13 +1,17 @@
 import { useState } from "react";
+import { ChevronRight } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const nextPhoto = () => {
-    let newIndex = currentIndex + 1;
+    let newIndex = (currentIndex + 1) % 4;
     setCurrentIndex(newIndex);
   };
   const previousPhoto = () => {
-    let lastIndex = currentIndex - 1;
+    let lastIndex = Math.abs(currentIndex - 1) % 4;
     setCurrentIndex(lastIndex);
   };
 
@@ -19,36 +23,49 @@ const Carousel = () => {
   ];
 
   return (
-    <div className=" relative w-96 h-64 mx-auto mt-10 overflow-hidden">
-      {arrayCats.map((photo, i) => {
-        let transform = "";
-        let zIndex = 0;
+    <>
+      <div className=" relative w-96 h-64 mx-auto mt-10 overflow-hidden perspective-[800px]">
+        {arrayCats.map((photo, i) => {
+          let transform = "";
+          let zIndex = 0;
 
-        let offset = i - currentIndex;
-        if (offset === 0) {
-          transform = "translateX(0) scale(1.1) rotateY(0deg)";
-          zIndex = 10;
-        }
-        if (offset === 1) {
-          transform = "translateX(60%) scale(0.9) rotateY(-25deg)";
-          zIndex = 5;
-        }
-        if (offset === 2) {
-          transform = "translateX(80%) scale(0.9) rotateY(25deg)";
-          zIndex = 3;
-        }
+          let offset = i - currentIndex;
+          if (offset === 0) {
+            transform = "translateX(0px) scale(1.1) rotateY(0deg)";
+            zIndex = 100;
+          }
+          if (offset === 1) {
+            transform = "translateX(-110px) scale(0.9) rotateY(-25deg)";
+            zIndex = 50;
+          }
+          if (offset === 2) {
+            transform = "translateX(110px) scale(0.9) rotateY(25deg)";
+            zIndex = 40;
+          } else {
+            if (offset > 1) {
+            }
+          }
 
-        return (
-          <img
-            key={i}
-            src={photo.src}
-            alt={photo.alt}
-            className="absolute top-1/2 left-1/2 w-40 h-50 object-cover rounded-xl shadow-md transition-all duration-300 -translate-x-1/2 -translate-y-1/2"
-            style={{ transform, zIndex }}
-          />
-        );
-      })}
-    </div>
+          return (
+            <img
+              key={i}
+              src={photo.src}
+              alt={photo.alt}
+              className="absolute top-1/2 left-1/2 w-50 h-60 object-cover rounded-xl shadow-md transition-all duration-600 -translate-x-1/2 -translate-y-1/2"
+              style={{ transform, zIndex }}
+            />
+          );
+        })}
+      </div>
+      <div className="flex justify-center items-center mt-4 gap-8">
+        <button onClick={previousPhoto}>
+          <ChevronLeft size={49} stroke="rgb(173, 20, 87)" strokeWidth={3} />
+        </button>
+        <button onClick={nextPhoto}>
+          <ChevronRight size={50} stroke="rgb(173, 20, 87)" strokeWidth={2.9} />
+        </button>
+      </div>
+    </>
   );
 };
 
