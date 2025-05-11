@@ -5,11 +5,9 @@ const Frameworks = () => {
         Frameworks and Libraries I've worked with:
       </div>
       <ol>
-        <li className="font-arcade text-rose-200 font-bold text-[20px]">
-          React
-        </li>
-        <li className="font-arcade text-rose-200 font-bold text-[20px]">Vue</li>
-        <li className="font-arcade text-rose-200 font-bold text-[20px]">
+        <li className="font-arcade text-white font-bold text-[25px]">React</li>
+        <li className="font-arcade text-white font-bold text-[25px]">Vue</li>
+        <li className="font-arcade text-white font-bold text-[25px]">
           Tailwind CSS
         </li>
       </ol>
