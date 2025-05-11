@@ -15,10 +15,31 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'CoralPixel';
+    src: url("../public/fonts/CoralPixels-Regular.ttf") format("truetype");
+  }
+
+  @font-face{
+    font-family: 'Pixelify';
+    src: url(../public/fonts/PixelifySans-VariableFont_wght.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: 'FontPixel';
+    src: url(../public/fonts/Jersey10-Regular.ttf) format("truetype");
+  }
+
+  
   
   @theme {
     --font-arcade : 'ArcadeClassic', sans-serif;
     --font-inconsolata : 'Inconsolata', sans-serif;
+    --font-pixel: 'CoralPixel', sans-serif;
+    --font-sans: 'Pixelify', sans-serif;
+    --font-pixelated: 'FontPixel', sans-serif;
+    
     --color-terminal: 
     rgba(30,30,30,255);
     

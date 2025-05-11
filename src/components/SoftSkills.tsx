@@ -6,29 +6,23 @@ const SoftSkills = () => {
       <h3 className="text-2xl font-arcade text-rose-800">SKILLS I HAVE :</h3>
 
       <ul className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2">
-        <li className="font-arcade text-white font-bold text-[25px]">
-          Problem Solving
+        <li className="font-arcade text-white font-bold text-[30px] tracking-wider whitespace-pre">
+          {"Problem  Solving"}
         </li>
 
-        <li className="font-arcade text-white font-bold text-[25px]">
-          {" "}
-          Good Time Management
-        </li>
-
-        <li className="font-arcade text-white font-bold text-[25px]">
+        <li className="font-arcade text-white font-bold text-[30px] tracking-wider">
           Curiosity
         </li>
 
-        <li className="font-arcade text-white font-bold text-[25px]">
+        <li className="font-arcade text-white font-bold text-[30px] tracking-wider">
           Teamwork
         </li>
 
-        <li className="font-arcade text-white font-bold text-[25px]">
-          Attention to Detail
-        </li>
-
-        <li className="font-arcade text-white font-bold text-[25px]">
+        <li className="font-arcade text-white font-bold text-[30px] tracking-wider">
           Empathy
+        </li>
+        <li className="font-arcade text-white font-bold text-[30px] tracking-wider whitespace-pre">
+          {"Good  Time  Management"}
         </li>
       </ul>
     </div>

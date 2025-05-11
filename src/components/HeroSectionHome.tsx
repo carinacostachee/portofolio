@@ -40,7 +40,7 @@ const HeroSectionHome = () => {
         className="absolute top-20 left-100 animate-float w-20"
       ></img>
       <img
-        src="/public/photos/bag.png"
+        src="/photos/bag.png"
         className="absolute top-20 right-20 animate-float w-20"
       ></img>
       <div className="flex flex-col justify-center items-center h-screen gap-10">
