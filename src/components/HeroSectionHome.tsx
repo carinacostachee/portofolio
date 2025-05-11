@@ -4,39 +4,39 @@ const HeroSectionHome = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-100 via-white to-rose-200 ">
       <img
-        src="/public/photos/computer.png"
+        src="/photos/computer.png"
         className=" absolute top-50 left-30 animate-float w-20"
       ></img>
       <img
-        src="/public/photos/cafea.png"
+        src="photos/cafea.png"
         className="absolute bottom-14 right-20 animate-float w-20"
       ></img>
       <img
-        src="/public/photos/meme.png"
+        src="/photos/meme.png"
         className="absolute top-75 right-50 animate-float w-30"
       ></img>
       <img
-        src="/public/photos/pisica.png"
+        src="/photos/pisica.png"
         className="absolute bottom-20 left-30 animate-float w-30"
       ></img>
       <img
-        src="/public/photos/cherries.png"
+        src="/photos/cherries.png"
         className="absolute top-30 left-200 animate-float w-20"
       ></img>
       <img
-        src="/public/photos/parfun.png"
+        src="/photos/parfun.png"
         className="absolute bottom-90 left-70 animate-float w-20"
       ></img>
       <img
-        src="/public/photos/pasta.png"
+        src="/photos/pasta.png"
         className="absolute bottom-60 right-90 animate-float w-20"
       ></img>
       <img
-        src="/public/photos/sunflower.png"
+        src="/photos/sunflower.png"
         className="absolute bottom-5 left-150 animate-float w-20"
       ></img>
       <img
-        src="/public/photos/headphones.png"
+        src="/photos/headphones.png"
         className="absolute top-20 left-100 animate-float w-20"
       ></img>
       <img
