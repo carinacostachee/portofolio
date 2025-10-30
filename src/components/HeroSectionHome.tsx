@@ -13,7 +13,7 @@ const HeroSectionHome = () => {
           <div className="font-inconsolata text-white text-xl sm:text-2xl  lg:text-2xl xl:text-xl font-bold">
             <div>{">"}Hey, I am</div>
             <div className="w-max">
-              <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-3xl sm:text-5xl lg:text-5xl xl:text-4xl text-rose-300 font-arcade">
+              <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-2xl sm:text-5xl text-rose-300 font-arcade">
                 <span className="font-inconsolata text-white text-xl sm:text-2xl lg:text-3xl xl:text-2xl">
                   {">"}
                 </span>
