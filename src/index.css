@@ -1,135 +1,122 @@
 @import "tailwindcss";
 
-
+@font-face {
+  font-family: "ArcadeClassic";
+  src: url("../public/fonts/ARCADECLASSIC.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../public/fonts/Inconsolata-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'ArcadeClassic';
-    src: 
-    url("../public/fonts/ARCADECLASSIC.TTF") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Inconsolata';
-    src: url("../public/fonts/Inconsolata-VariableFont_wdth\,wght.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'CoralPixel';
-    src: url("../public/fonts/CoralPixels-Regular.ttf") format("truetype");
-  }
-
-  @font-face{
-    font-family: 'Pixelify';
-    src: url(../public/fonts/PixelifySans-VariableFont_wght.ttf) format("truetype");
-  }
-
-  @font-face {
-    font-family: 'FontPixel';
-    src: url(../public/fonts/Jersey10-Regular.ttf) format("truetype");
-  }
-
-  
-  
-  @theme {
-    --font-arcade : 'ArcadeClassic', sans-serif;
-    --font-inconsolata : 'Inconsolata', sans-serif;
-    --font-pixel: 'CoralPixel', sans-serif;
-    --font-sans: 'Pixelify', sans-serif;
-    --font-pixelated: 'FontPixel', sans-serif;
-    
-    --color-terminal: 
-    rgba(30,30,30,255);
-    
-  }
-
-  @layer utilities {
-    @keyframes typing {
-      0% {
-        width: 0%;
-        visibility: hidden;
-      }
-      100% {
-        width: 100%;
-      }
-    }
-    
-    @keyframes blink {
-      50% {
-        border-color: transparent;
-      }
-      100% {
-        border-color: white;
-      }
-    }
-    
-   
-    
-    .animate-typing {
-      animation: typing 2s steps(20) forwards;
-      white-space: nowrap;
-      overflow: hidden;
-      display: inline-block;
-    }
-    
-    .animate-blink {
-      animation: blink 0.7s step-end infinite;
-      border-right: 4px solid white;
-    }
-    @keyframes float {
-      0%   { transform: translateY(0px); }
-      50%  { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
-  
-    .animate-float {
-      animation: float 4s ease-in-out infinite;
-    }
-    
-    .animate-float-delay {
-      animation: float 4s ease-in-out infinite;
-      animation-delay: 2s;
-    }
-    .rotatephoto{
-      
-      transform: rotate(0deg);
-      animation: rotateOnce 1s ease-in-out forwards;
-    }
-
-    @keyframes rotateOnce{
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    } 
-    @keyframes square {
-      0% {
-        opacity:1 ;
-      }
-      50%{
-        opacity:0;
-      }
-
-      100%{
-        opacity:1;
-      }
+  font-family: "CoralPixel";
+  src: url("../public/fonts/CoralPixels-Regular.ttf") format("truetype");
 }
-    .animate-square{
-      animation: square 4s infinite;
-      
-      
+
+@font-face {
+  font-family: "Pixelify";
+  src: url(../public/fonts/PixelifySans-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "FontPixel";
+  src: url(../public/fonts/Jersey10-Regular.ttf) format("truetype");
+}
+
+@theme {
+  --font-arcade: "ArcadeClassic", sans-serif;
+  --font-inconsolata: "Inconsolata", sans-serif;
+  --font-pixel: "CoralPixel", sans-serif;
+  --font-sans: "Pixelify", sans-serif;
+  --font-pixelated: "FontPixel", sans-serif;
+
+  --color-terminal: rgba(30, 30, 30, 255);
+}
+
+@layer utilities {
+  @keyframes typing {
+    0% {
+      width: 0%;
+      visibility: hidden;
     }
-      
-    
-    
+    100% {
+      width: 100%;
+    }
   }
 
- 
-  
- 
-  
-  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: white;
+    }
+  }
+
+  .animate-typing {
+    animation: typing 2s steps(20) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .animate-blink {
+    animation: blink 0.7s step-end infinite;
+    border-right: 4px solid white;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .animate-float-delay {
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  .rotatephoto {
+    transform: rotate(0deg);
+    animation: rotateOnce 1s ease-in-out forwards;
+  }
+
+  @keyframes rotateOnce {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes square {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  .animate-square {
+    animation: square 4s infinite;
+  }
+}
