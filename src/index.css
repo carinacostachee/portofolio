@@ -2,9 +2,12 @@
 
 @font-face {
   font-family: "ArcadeClassic";
-  src: url("../public/fonts/ARCADECLASSIC.TTF") format("truetype");
+  src: url("../public/fonts/ARCADECLASSIC.TTF") format("truetype"),
+    url("../public/fonts/ARCADECLASSIC.woff") format("woff"),
+    url("../public/fonts/ARCADECLASSIC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Inconsolata";
