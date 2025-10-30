@@ -1,4 +1,4 @@
-/*  src/components/SoftSkills.tsx  */
+
 
 const SoftSkills = () => {
   return (

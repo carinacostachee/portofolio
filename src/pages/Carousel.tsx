@@ -1,19 +1,9 @@
 import { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import { ChevronLeft } from "lucide-react";
-import { ArrowLeft } from "lucide-react";
-import { ArrowRight } from "lucide-react";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const nextPhoto = () => {
-    let newIndex = (currentIndex + 1) % 4;
-    setCurrentIndex(newIndex);
-  };
-  const previousPhoto = () => {
-    let lastIndex = Math.abs(currentIndex - 1) % 4;
-    setCurrentIndex(lastIndex);
-  };
 
   const arrayCats = [
     { src: "/photos/mitsu1.jpg", alt: "Mitsu sleeping" },
@@ -21,6 +11,16 @@ const Carousel = () => {
     { src: "/photos/newmitsu.jpeg", alt: "Mitsu on the washing machine" },
     { src: "/photos/jiji2.jpg", alt: "Jiji sleepy" },
   ];
+
+  const nextPhoto = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % arrayCats.length);
+  };
+
+  const previousPhoto = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + arrayCats.length) % arrayCats.length
+    );
+  };
 
   return (
     <>
@@ -34,16 +34,13 @@ const Carousel = () => {
             transform = "translateX(0px) scale(1.1) rotateY(0deg)";
             zIndex = 100;
           }
-          if (offset === 1) {
+          if (offset === 1 || offset === -3) {
             transform = "translateX(-110px) scale(0.9) rotateY(-25deg)";
             zIndex = 50;
           }
-          if (offset === 2) {
+          if (offset === 2 || offset === -2) {
             transform = "translateX(110px) scale(0.9) rotateY(25deg)";
             zIndex = 40;
-          } else {
-            if (offset > 1) {
-            }
           }
 
           return (
