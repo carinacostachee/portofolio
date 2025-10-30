@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        arcade: ["ArcadeClassic", "sans-serif"],
+        arcade: ["ArcadeCarina", "sans-serif"],
         inconsolata: ["Inconsolata", "monospace"],
         pixel: ["CoralPixel", "sans-serif"],
         sans: ["Pixelify", "sans-serif"],

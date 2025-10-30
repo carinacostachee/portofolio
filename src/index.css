@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "ArcadeClassic";
+  font-family: "ArcadeCarina";
   src: url("../public/fonts/ARCADECLASSIC.TTF") format("truetype"),
     url("../public/fonts/ARCADECLASSIC.woff") format("woff"),
     url("../public/fonts/ARCADECLASSIC.woff2") format("woff2");
@@ -34,7 +34,7 @@
 }
 
 @theme {
-  --font-arcade: "ArcadeClassic", sans-serif;
+  --font-arcade: "ArcadeCarina", sans-serif;
   --font-inconsolata: "Inconsolata", sans-serif;
   --font-pixel: "CoralPixel", sans-serif;
   --font-sans: "Pixelify", sans-serif;
