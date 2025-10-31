@@ -16,13 +16,21 @@ const HeroSectionHome = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-rose-100 via-white to-rose-200 overflow-hidden">
-      <div className="flex flex-col lg:flex-row justify-center items-center h-screen gap-10 p-4">
+    <div className="min-h-screen w-full bg-gradient-to-br from-rose-100 via-white to-rose-200 overflow-hidden ">
+      <div
+        className="fixed inset-0 z-10 opacity-15 w-full h-full pointer-events-none"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(0deg, #ff69b4, #ff69b4 1px, transparent 1px, transparent 26px), repeating-linear-gradient(90deg, #ff69b4, #ff69b4 1px, transparent 1px, transparent 26px)",
+          backgroundSize: "26px 26px",
+        }}
+      ></div>
+      <div className="flex flex-col lg:flex-row justify-center items-center h-screen gap-10 p-4 z-12">
         <div className="flex flex-col items-center gap-4">
           <div className="font-inconsolata text-rose-300 font-bold text-2xl sm:4xl">
             Type 'ls' in the terminal to see secret folders!
           </div>
-          <div className="relative w-11/12 md:w-full p-6 rounded-lg bg-terminal flex flex-col items-start gap-8 md:gap-20 overflow-hidden">
+          <div className="relative w-11/12 md:w-full p-6 rounded-lg bg-terminal flex flex-col items-start gap-8 md:gap-20 overflow-hidden z-12">
             <div className="flex space-x-2 mt-0">
               <div className="w-3 h-3 rounded-full bg-red-500"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
@@ -68,7 +76,7 @@ const HeroSectionHome = () => {
             <div className="flex flex-col items-center">
               <img
                 src="/photos/pinkfolder.png"
-                className="w-20 sm:w-28 h-auto"
+                className="w-20 sm:w-28 h-auto "
               ></img>
               <Link
                 to="/about"
