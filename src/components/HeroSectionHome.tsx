@@ -9,7 +9,7 @@ const HeroSectionHome = () => {
   };
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-rose-100 via-white to-rose-200 overflow-hidden">
-      <div className="flex flex-row sm:flex-col md:flex-col lg:flex-row justify-center items-center h-screen gap-10">
+      <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row justify-center items-center h-screen gap-10">
         <div className="relative w-11/12 h-1/3 md:w-2/3 lg:w-1/2 xl:w-1/3 p-6 rounded-lg bg-terminal flex flex-col items-start gap-8 md:gap-20 overflow-hidden">
           <div className="flex space-x-2 mt-0">
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -42,7 +42,7 @@ const HeroSectionHome = () => {
           </div>
         </div>
         {showFolders && (
-          <div className="mt-1  text-rose-300 flex flex-col gap-4 sm:flex-row justify-center items-center">
+          <div className="mt-1  text-rose-300 flex flex-row sm:flex-col gap-4  justify-center items-center">
             <div className="flex flex-col items-center">
               <img
                 src="/photos/pinkfolder.png"
