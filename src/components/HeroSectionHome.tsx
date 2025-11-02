@@ -4,15 +4,15 @@ import BackgroundStyle from "../components/BackgroundStyle";
 
 const HeroSectionHome = () => {
   const [showFolders, setShowFolders] = useState(false);
+  const [inputValue, setInputValue] = useState("");
 
-  const handleFolder = () => {
-    setShowFolders(!showFolders);
-  };
-
-  const triggerFolderDisplay = () => {
-    const input = document.getElementById("ls_folders") as HTMLInputElement;
-    if (input && input.value.toLocaleLowerCase() === "ls") {
-      handleFolder();
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    setInputValue(value);
+    if (value.toLowerCase() === "ls") {
+      setShowFolders(true);
+    } else {
+      setShowFolders(false);
     }
   };
 
@@ -56,7 +56,8 @@ const HeroSectionHome = () => {
                     type="text"
                     id="ls_folders"
                     placeholder="..."
-                    onInput={triggerFolderDisplay}
+                    value={inputValue}
+                    onChange={handleInputChange}
                     required
                   />
                 </span>
