@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import BackgroundStyle from "../components/BackgroundStyle";
 
 const HeroSectionHome = () => {
   const [showFolders, setShowFolders] = useState(false);
@@ -17,14 +18,7 @@ const HeroSectionHome = () => {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-rose-100 via-white to-rose-200 overflow-hidden ">
-      <div
-        className="fixed inset-0 z-10 opacity-15 w-full h-full pointer-events-none"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(0deg, #ff69b4, #ff69b4 1px, transparent 1px, transparent 26px), repeating-linear-gradient(90deg, #ff69b4, #ff69b4 1px, transparent 1px, transparent 26px)",
-          backgroundSize: "26px 26px",
-        }}
-      ></div>
+      <BackgroundStyle />
       <div className="flex flex-col lg:flex-row justify-center items-center h-screen gap-10 p-4 z-12">
         <div className="flex flex-col items-center gap-4">
           <div className="font-inconsolata text-rose-300 font-bold text-2xl sm:4xl">
