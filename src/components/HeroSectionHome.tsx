@@ -9,7 +9,7 @@ const HeroSectionHome = () => {
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     setInputValue(value);
-    if (value.toLowerCase() === "ls") {
+    if (value.toLowerCase().trim() === "ls") {
       setShowFolders(true);
     } else {
       setShowFolders(false);
