@@ -17,7 +17,7 @@ const Work = () => {
           Work
         </span>
         <div
-          className="flex bg-pink-400 w-80%
+          className="flex bg-pink-400 w-4/5
          sm:w-3/4   border-5 border-rose-300 overflow-hidden"
         >
           <div className="w-2/5  border-r-4 border-rose-300 flex flex-col">
