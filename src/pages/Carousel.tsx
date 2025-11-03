@@ -24,7 +24,7 @@ const Carousel = () => {
 
   return (
     <>
-      <div className=" relative w-96 h-64 mx-auto mt-10 overflow-hidden perspective-[800px]">
+      <div className=" relative  w-100 h-70 mx-auto mt-10 overflow-hidden perspective-[800px]">
         {arrayCats.map((photo, i) => {
           let transform = "";
           let zIndex = 0;
