@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import BackgroundStyle from "../components/BackgroundStyle";
 
 const HeroSectionHome = () => {
   const [showFolders, setShowFolders] = useState(false);
@@ -18,8 +17,7 @@ const HeroSectionHome = () => {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-rose-100 via-white to-rose-200 overflow-hidden ">
-      <BackgroundStyle />
-      <div className="flex flex-col lg:flex-row justify-center items-center h-screen gap-10 p-4 z-12">
+      <div className="flex flex-col lg:flex-row justify-center items-center min-h-screen gap-10 p-4 z-12">
         <div className="flex flex-col items-center gap-4">
           <div className="font-inconsolata text-rose-300 font-bold text-2xl sm:4xl">
             Type 'ls' in the terminal to see secret folders!
@@ -67,7 +65,7 @@ const HeroSectionHome = () => {
         </div>
 
         {showFolders && (
-          <div className="mt-1  text-rose-300 flex flex-row sm:flex-col gap-4  justify-center items-center">
+          <div className="mt-1  text-rose-300 flex flex-row md:flex-row lg:flex-col sm:flex-col gap-4  justify-center items-center">
             <div className="flex flex-col items-center">
               <img
                 src="/photos/pinkfolder.png"
