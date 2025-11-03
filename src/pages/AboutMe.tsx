@@ -4,12 +4,8 @@ import { Link } from "react-router-dom";
 const AboutMe = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-100 via-white to-rose-200 ">
-      <div className="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-1 justify-center items-center ">
-        <img
-          src="/photos/mepoza.png"
-          className="w-full max-w-xs sm:w-80 mt-5"
-          alt="Carina Costache profile"
-        ></img>
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-1 justify-center items-center ">
+        <img src="/photos/mepoza.png" className="w-100 mt-5"></img>
         <div className="flex flex-col justify-center items-center gap 10 ">
           <span className="text-[70px] font-arcade tracking-wider text-rose-300  ">
             About
@@ -41,12 +37,14 @@ const AboutMe = () => {
           </div>
           <Carousel />
         </div>
-        <div className="flex flex-row justify-center items center gap-10 mt-10 mb-5">
-          <Link
-            to="/work"
-            download
-            type="button"
-            className=" button w-30 h-12 sm:w-80 sm:h-17 bg-rose-300 rounded-lg cursor-pointer select-none
+      </div>
+
+      <div className="flex flex-row justify-center items center gap-10 mt-10">
+        <Link
+          to="/work"
+          download
+          type="button"
+          className=" button w-30 h-12 sm:w-80 sm:h-17 bg-rose-300 rounded-lg cursor-pointer select-none
                         active:translate-y-2 
                         active:[box-shadow:0_0_0_0_#881337]
                         active:border-b-[0px]
@@ -56,16 +54,16 @@ const AboutMe = () => {
                         font-arcade text-rose-800 text-2xl sm:text-[30px] 
                         
                                                                 "
-          >
-            <span className="flex justify-center items-center mt-2 mb-2">
-              Work
-            </span>
-          </Link>
-          <Link
-            to="/contact"
-            download
-            type="button"
-            className=" button w-30 h-12 sm:w-80 sm:h-17 bg-rose-300 rounded-lg cursor-pointer select-none
+        >
+          <span className="flex justify-center items-center mt-2 mb-2">
+            Work
+          </span>
+        </Link>
+        <Link
+          to="/contact"
+          download
+          type="button"
+          className=" button w-30 h-12 sm:w-80 sm:h-17 bg-rose-300 rounded-lg cursor-pointer select-none
                         active:translate-y-2 
                         active:[box-shadow:0_0_0_0_#881337]
                         active:border-b-[0px]
@@ -75,12 +73,9 @@ const AboutMe = () => {
                         font-arcade text-rose-800  text-2xl sm:text-[30px] 
                         
                                                                 "
-          >
-            <span className="flex justify-center items-center mt-2">
-              Contact
-            </span>
-          </Link>
-        </div>
+        >
+          <span className="flex justify-center items-center mt-2">Contact</span>
+        </Link>
       </div>
     </div>
   );
