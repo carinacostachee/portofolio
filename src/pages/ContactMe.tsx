@@ -66,12 +66,12 @@ const ContactMe = () => {
                         active:border-b-[0px]
                         transition-all duration-150 
                         shadow-4xl
-                        border-b-[6px] border-rose-800 
-                        font-arcade text-rose-800  text-2xl text-[40px] 
+                        border-b-[6px] border-rose-800
+                        font-arcade text-rose-800  text-2xl sm:text-[40px]
                         
                                                                 "
           >
-            <span className="flex justify-center items-center mb-2">Me</span>
+            <span className="flex justify-center items-center mt-1">Me</span>
           </Link>
         </div>
       </div>
