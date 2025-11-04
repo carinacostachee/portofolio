@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ContactMe = () => {
   return (
-    <div className="bg-gradient-to-br from-rose-100 via-white to-rose-200 h-screen">
+    <div className="bg-gradient-to-br from-rose-100 via-white to-rose-200 min-h-screen">
       <div className="flex flex-col  min-h-screen  w-full   ">
         <h1 className="text-5xl sm:text-[70px] font-arcade tracking-wider text-start text-rose-300 mt-40 ml-20 sm:ml-40">
           Contact
